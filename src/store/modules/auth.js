@@ -22,6 +22,7 @@ const actions = {
         window.localStorage.setItem('imgur_token', query.access_token);
         router.push('/');
     },
+    //getting the commit method from context. can be used as (context) => context.commit()
     logout: ({ commit }) =>{ 
         commit('setToken', null);
         window.localStorage.removeItem('imgur_token');
