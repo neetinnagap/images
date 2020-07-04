@@ -29,6 +29,7 @@ const actions = {
     }
 };
 
+//Setters
 const mutations = {
     //state is always ste and comes at 1st position
     setToken: (state, token) => state.token = token
